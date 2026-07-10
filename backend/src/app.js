@@ -4,6 +4,7 @@ import morgan from "morgan";
 import errorHandler from "./middleware/errorMiddleware.js";
 import cookieParser from "cookie-parser";
 import authRoutes from "./routes/authRoutes.js";
+import storeRoutes from "./routes/storeRoutes.js";
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -18,5 +19,6 @@ app.get("/", (req, res) => {
 app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
+app.use("/api/stores", storeRoutes);
 app.use(errorHandler);
 export default app;
