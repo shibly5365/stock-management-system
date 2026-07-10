@@ -5,10 +5,18 @@ import errorHandler from "./middleware/errorMiddleware.js";
 import cookieParser from "cookie-parser";
 import authRoutes from "./routes/authRoutes.js";
 import storeRoutes from "./routes/storeRoutes.js";
+import productRoutes from "./routes/productRoutes.js";
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    credentials: true,
+  })
+);
 app.use(express.json());
+app.use(cookieParser());
 app.use(morgan("dev"));
+
 
 app.get("/", (req, res) => {
   res.status(200).json({
@@ -16,9 +24,9 @@ app.get("/", (req, res) => {
     message: "Helth Testing......",
   });
 });
-app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/stores", storeRoutes);
+app.use("/api/products", productRoutes);
 app.use(errorHandler);
 export default app;
