@@ -1,0 +1,82 @@
+openapi: 3.0.3
+
+info:
+  title: Multi-Store Stock Management API
+  version: 1.0.0
+  description: API documentation for Multi-Store Stock Management
+
+servers:
+  - url: http://localhost:7005/api
+
+paths:
+
+  /auth/register:
+    post:
+      summary: Register User
+
+  /auth/login:
+    post:
+      summary: Login User
+
+  /auth/logout:
+    post:
+      summary: Logout User
+
+  /stores:
+    get:
+      summary: Get All Stores
+
+    post:
+      summary: Create Store
+
+  /stores/{id}:
+    get:
+      summary: Get Store By ID
+
+    put:
+      summary: Update Store
+
+    delete:
+      summary: Delete Store
+
+  /products:
+    get:
+      summary: Get All Products
+
+    post:
+      summary: Create Product
+
+  /products/{id}:
+    get:
+      summary: Get Product By ID
+
+    put:
+      summary: Update Product
+
+    delete:
+      summary: Delete Product
+
+  /stocks:
+    get:
+      summary: Get All Stocks
+
+    post:
+      summary: Create Stock
+
+  /stocks/{id}:
+    get:
+      summary: Get Stock By ID
+
+    put:
+      summary: Update Stock
+
+    delete:
+      summary: Delete Stock
+
+  /stocks/adjust:
+    patch:
+      summary: Adjust Stock
+
+  /stocks/transfer:
+    post:
+      summary: Transfer Stock
