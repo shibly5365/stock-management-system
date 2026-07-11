@@ -1,0 +1,23 @@
+.adjust-container {
+  display: flex;
+}
+
+.adjust-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.adjust-form {
+  display: flex;
+  gap: 10px;
+}
+
+.adjust-form select,
+.adjust-form input {
+  padding: 8px;
+}
+
+.adjust-form button {
+  padding: 8px 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,64 @@
+.stocks-container {
+  display: flex;
+}
+
+.stocks-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.stock-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.stock-form select,
+.stock-form input {
+  padding: 8px;
+}
+
+.stock-form button {
+  padding: 8px 14px;
+  cursor: pointer;
+}
+.cancel-btn {
+  background: gray;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.delete-btn {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+table th {
+  background: #1976d2;
+  color: white;
+}

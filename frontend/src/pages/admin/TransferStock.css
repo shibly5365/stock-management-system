@@ -1,0 +1,32 @@
+.transfer-container {
+    display: flex;
+}
+
+.transfer-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.transfer-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.transfer-form select,
+.transfer-form input {
+    padding: 8px;
+    min-width: 180px;
+}
+
+.transfer-form button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background: #1976d2;
+    color: white;
+    border: none;
+}
+
+.transfer-form button:hover {
+    background: #125ea8;
+}

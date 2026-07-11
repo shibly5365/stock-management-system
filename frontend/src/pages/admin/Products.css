@@ -1,0 +1,61 @@
+.products-container {
+  display: flex;
+}
+
+.products-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.product-form {
+  margin-bottom: 20px;
+}
+
+.product-form input {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.product-form button {
+  padding: 8px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: gray;
+  color: white;
+  border: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+table th {
+  background: #1976d2;
+  color: white;
+}
+
+.edit-btn {
+  background: orange;
+  border: none;
+  padding: 6px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
